@@ -1,38 +1,30 @@
 #Добавить gui
-print("Введите свое имя.")
-name = str(input())
-
-print("Введите свой возраст.")
-age = int(input())
+name = str(input("Введите свое имя: "))
+age = int(input("Введите свой возраст: "))
 while age < 10:
-    print("Введите свой возраст еще раз.")
-    age = int(input())
+    age = int(input("Введите свой возраст еще раз: "))
     if age >= 10:
         break
 
-print("Введите свой вес.")
-wt = float(input())
+wt = float(input("Введите свой вес: "))
 while wt > 300:
-    print("Введите свой вес еще раз.")
-    wt = float(input())
+    wt = float(input("Введите свой вес еще раз: "))
     if wt <= 300:
         break
 
-print("Введите свой рост.")
-height = float(input())
+height = float(input("Введите свой рост: "))
 while height > 3:
-    print("Введите свой рост еще раз.")
-    height = float(input())
+    height = float(input("Введите свой рост еще раз: "))
     if height <= 3:
         break
-
+ 
 #Вывод показателей и вашего ИМТ
 print(f"Имя: {name} Возраст: {age} Вес: {wt} Рост: {height}")
 bmi = wt / height ** 2
 i = round(bmi)
-if i >= 10 and i <= 20:
+if i >= 10 and i <= 25:
     print(f"Ваш ИМТ {i} в пределах нормы")
-elif i >= 20 and i <= 40:
+elif i >= 25 and i <= 40:
     print(f"Ваш ИМТ {i} это ожирение 1 степени")
 elif i >= 40 and i <= 60:
     print(f"Ваш ИМТ {i} это ожирение 2 степени")

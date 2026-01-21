@@ -24,9 +24,9 @@ bmi = wt / height ** 2
 i = round(bmi)
 if i >= 10 and i <= 25:
     print(f"Ваш ИМТ {i} в пределах нормы")
-elif i >= 25 and i <= 40:
+elif i >= 25 and i <= 35:
     print(f"Ваш ИМТ {i} это ожирение 1 степени")
-elif i >= 40 and i <= 60:
+elif i >= 35 and i <= 45:
     print(f"Ваш ИМТ {i} это ожирение 2 степени")
 else:
     print(f"Ваш ИМТ {i} это ожирение 3 степени")

@@ -21,7 +21,8 @@ while height > 3:
 #Вывод показателей и вашего ИМТ
 print(f"Имя: {name} Возраст: {age} Вес: {wt} Рост: {height}")
 bmi = wt / height ** 2
-i = round(bmi)
+i = round(bmi, 2)
+
 if i >= 10 and i <= 25:
     print(f"Ваш ИМТ {i} в пределах нормы")
 elif i >= 25 and i <= 35:
